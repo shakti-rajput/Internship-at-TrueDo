@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AgroKult</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Agro Kult Farmer " />
+<style>
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 14px 16px;
+}
+
+
+</style>
+<style>
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none;}
+.txt-rt{text-align:right;}
+.txt-lt{text-align:left;}
+.txt-center{text-align:center;}
+.float-rt{float:right;}
+.float-lt{float:left;}
+.clear{clear:both;}
+.pos-relative{position:relative;}
+.pos-absolute{position:absolute;}
+.vertical-base{	vertical-align:baseline;}
+.vertical-top{	vertical-align:top;}
+nav.vertical ul li{	display:block;}
+nav.horizontal ul li{	display: inline-block;}
+img{max-width:100%;}
+
+h1.argh{
+	color:darkgreen;margin-left:40px;margin-top:30px;font-size:70px;
+}
+a.argh{
+	color:black;margin-top:30px;font-size:70px;
+}
+h2.argh{
+	margin-left:40px;font-style:oblique;font-size:20px;
+}
+@media (max-width:1440px){
+
+    font.argh h1.argh{
+      font-size:70px
+    }
+    h2.argh{
+      font-size:20px;
+    }
+          
+
+}
+@media (max-width:1230px){
+
+			h1.argh{
+			font-size:60px;
+			}
+            a.argh{
+			font-size:60px;
+			}
+			h2.argh{
+			font-size:18px;
+			}
+            .navbar a {			
+            font-size: 16px;
+            padding: 13px 15px;
+          }
+  
+}
+@media (max-width:950px){
+
+		h1.argh{
+			font-size:50px;
+			}
+            a.argh{
+			font-size:50px;
+			}
+			h2.argh{
+			font-size:16px;
+			}
+
+     .navbar a{			
+            font-size: 15px;
+            padding: 10px 15px;
+          }
+          
+ 
+
+}
+@media (max-width:768px){
+
+		h1.argh{
+			font-size:40px;
+			}
+            a.argh{
+			font-size:40px;
+			}
+			h2.argh{
+			font-size:14px;
+			}
+
+    .navbar a{			
+            font-size: 15px;
+            padding: 9px 15px;
+          }
+          
+
+
+}
+@media (max-width:680px){
+		h1.argh{
+			font-size:35px;
+			}
+            a.argh{
+			font-size:35px;
+			}
+			h2.argh{
+			font-size:13px;
+			}
+            .navbar a{			
+            font-size: 15px;
+            padding: 9px 15px;
+          }
+}
+@media (max-width:620px){
+			h1.argh{
+			font-size:33px;
+			}
+            a.argh{
+			font-size:33px;
+			}
+			h2.argh{
+			font-size:11px;
+			}
+    
+}
+
+
+@media (max-width:585px){
+
+    		h1.argh{
+			font-size:28px;
+			}
+            a.argh{
+			font-size:28px;
+			}
+			h2.argh{
+			font-size:10px;
+			}
+            .navbar a{			
+            font-size: 14px;
+            padding: 4px 12px;
+          }
+    
+    
+
+
+
+}
+@media (max-width:444px){
+
+	h1.argh{
+			font-size:17px;
+			}
+            a.argh{
+			font-size:17px;
+			}
+			h2.argh{
+			font-size:10px;
+			}
+
+    .navbar a{			
+            font-size: 12px;
+            padding: 3px 12px;
+          }
+ 
+}
+</style>
+<style> 
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	float:top;
+}
+
+input[type=text]:focus {
+    width: 50%;
+}
+
+
+header{
+	    padding: 0;
+		margin-left:2%;
+    text-align: center;
+	border: 0px solid lightgrey;
+
+}
+
+
+</style>
+
+</head>
+<body>
+	
+	<div style="margin-top:90px;border-bottom: 6px solid black;background-color:transparent;">
+	<p><img src="AgroKult Logo.jpg" style="margin-top:-90px;width:300px; height:88px; float:left;"></img></p>
+	</div>
+
+
+	<div style="z-index:2;font-family:monospace;" class="navbar">
+
+	  <a href=""></a>
+	  <a href="#contact">Contact Us</a>
+	  <a href="#contact">Language</a>
+	  <a href="#about">Support</a>
+	</div>
+
+
+<style>
+h1.anim 
+{
+	font-size:25px;
+	margin-top:35px;
+	font-style:;
+	padding-left:21x;
+	color:#566573;
+	font-family:Lucida Console;
+}
+h4.anim{
+	color:black;
+	margin-top:10px;
+	font-style:oblique;
+	padding-left:4px;
+	padding-top:8px;
+	font-size:16px;
+	font-weight: bold;
+}
+div.floating-box{
+	margin-top:50px;
+	margin-left:50px;
+}
+
+</style>
+<div style="text-align:center;background-color:transparent;margin-top:1%;">
+	<div class="floating-box">   
+	   <div class="example example-5">
+		  <div class="email">		
+			<div class="masthead">
+			<h1 class="anim"style="">Personal Profile</h1>
+			</div>
+			<div class="send"style="margin-bottom:10%;margin-right:30%;">
+			<h4 class="anim"style="">Modify</h4>
+			</div>
+		  </div>
+		</div>
+	</div>
+		<div class="floating-box">   
+	   <div class="example example-5">
+		  <div class="email">
+			<div class="masthead">
+			<h1 class="anim" style="">Business Page</h1>
+			</div>
+			<div class="send"style="margin-bottom:10%;margin-right:30%;">
+			<h4 class="anim"style="">Modify</h4>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="floating-box">   
+	   <div class="example example-5">
+		  <div class="email">
+			<div class="masthead">
+			<h1 class="anim" style="">Interests</h1>
+			</div>
+			<div class="send"style="margin-bottom:10%;margin-right:30%;">
+			<h4 class="anim"style="">Modify</h4>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+	
+</div>	
+
+	<div class="after-box" style="width:30px;height: 60px;padding-top:10%;margin-left: 90%;margin-bottom:10%;border: 3px solid transparent;">
+		<div class="progress-demo">
+			<button style="float:right;margin-right:20px;margin-bottom:30px;position:relative;z-index:0;"
+			class="new-button" data-color="purple" data-style="expand-right">
+			<span class="">Proceed</span></button>
+		</div>
+	</div>			
+		<style>
+		.floating-box {
+			display: inline-block;
+			width: 300px;
+			height: 240px;
+			margin: 10px;
+			border: 3px solid transparent;  
+		}
+
+		.after-box {
+			border: 3px solid transparent; 
+		}
+		</style>
+		<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/index.js"></script>
+        <script src="dist/spin.min.js">
+		</script>
+        <script src="dist/ladda.min.js"></script>
+        <script>
+            Ladda.bind( 'div:not(.progress-demo) button', { timeout: 2000 } );
+            Ladda.bind( 'div.progress-demo button', {
+                callback: function( instance ) {
+                    var progress = 0;
+                    var interval = setInterval( function() {
+                        progress = Math.min( progress + Math.random() * 0.1, 1 );
+                        instance.setProgress( progress );
+                        if( progress === 1 ) {
+                            instance.stop();
+                            clearInterval( interval );
+                        }
+                    }, 50 );
+                }
+            } );
+        </script>
+		<style>
+		.new-button{position:relative}.new-button .new-spinner{position:absolute;z-index:2;display:inline-block;width:32px;height:32px;top:50%;margin-top:-16px;opacity:0;pointer-events:none}.new-button .new-label{position:relative;z-index:3}.new-button .new-progress{position:absolute;width:0;height:100%;left:0;top:0;background:rgba(0,0,0,0.2);visibility:hidden;opacity:0;-webkit-transition:0.1s linear all !important;-moz-transition:0.1s linear all !important;-ms-transition:0.1s linear all !important;-o-transition:0.1s linear all !important;transition:0.1s linear all !important}.new-button[data-loading] .new-progress{opacity:1;visibility:visible}.new-button,.new-button .new-spinner,.new-button .new-label{-webkit-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-moz-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-ms-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;-o-transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important;transition:0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all !important}.new-button[data-style=zoom-in],.new-button[data-style=zoom-in] .new-spinner,.new-button[data-style=zoom-in] .new-label,.new-button[data-style=zoom-out],.new-button[data-style=zoom-out] .new-spinner,.new-button[data-style=zoom-out] .new-label{-webkit-transition:0.3s ease all !important;-moz-transition:0.3s ease all !important;-ms-transition:0.3s ease all !important;-o-transition:0.3s ease all !important;transition:0.3s ease all !important}.new-button[data-style=expand-right] .new-spinner{right:14px}.new-button[data-style=expand-right][data-size="s"] .new-spinner,.new-button[data-style=expand-right][data-size="xs"] .new-spinner{right:4px}.new-button[data-style=expand-right][data-loading]{padding-right:56px}.new-button[data-style=expand-right][data-loading] .new-spinner{opacity:1}.new-button[data-style=expand-right][data-loading][data-size="s"],.new-button[data-style=expand-right][data-loading][data-size="xs"]{padding-right:40px}.new-button[data-style=expand-left] .new-spinner{left:14px}.new-button[data-style=expand-left][data-size="s"] .new-spinner,.new-button[data-style=expand-left][data-size="xs"] .new-spinner{left:4px}.new-button[data-style=expand-left][data-loading]{padding-left:56px}.new-button[data-style=expand-left][data-loading] .new-spinner{opacity:1}.new-button[data-style=expand-left][data-loading][data-size="s"],.new-button[data-style=expand-left][data-loading][data-size="xs"]{padding-left:40px}.new-button[data-style=expand-up]{overflow:hidden}.new-button[data-style=expand-up] .new-spinner{top:-32px;left:50%;margin-left:-16px}.new-button[data-style=expand-up][data-loading]{padding-top:54px}.new-button[data-style=expand-up][data-loading] .new-spinner{opacity:1;top:14px;margin-top:0}.new-button[data-style=expand-up][data-loading][data-size="s"],.new-button[data-style=expand-up][data-loading][data-size="xs"]{padding-top:32px}.new-button[data-style=expand-up][data-loading][data-size="s"] .new-spinner,.new-button[data-style=expand-up][data-loading][data-size="xs"] .new-spinner{top:4px}.new-button[data-style=expand-down]{overflow:hidden}.new-button[data-style=expand-down] .new-spinner{top:62px;left:50%;margin-left:-16px}.new-button[data-style=expand-down][data-size="s"] .new-spinner,.new-button[data-style=expand-down][data-size="xs"] .new-spinner{top:40px}.new-button[data-style=expand-down][data-loading]{padding-bottom:54px}.new-button[data-style=expand-down][data-loading] .new-spinner{opacity:1}.new-button[data-style=expand-down][data-loading][data-size="s"],.new-button[data-style=expand-down][data-loading][data-size="xs"]{padding-bottom:32px}.new-button[data-style=slide-left]{overflow:hidden}.new-button[data-style=slide-left] .new-label{position:relative}.new-button[data-style=slide-left] .new-spinner{left:100%;margin-left:-16px}.new-button[data-style=slide-left][data-loading] .new-label{opacity:0;left:-100%}.new-button[data-style=slide-left][data-loading] .new-spinner{opacity:1;left:50%}.new-button[data-style=slide-right]{overflow:hidden}.new-button[data-style=slide-right] .new-label{position:relative}.new-button[data-style=slide-right] .new-spinner{right:100%;margin-left:-16px}.new-button[data-style=slide-right][data-loading] .new-label{opacity:0;left:100%}.new-button[data-style=slide-right][data-loading] .new-spinner{opacity:1;left:50%}.new-button[data-style=slide-up]{overflow:hidden}.new-button[data-style=slide-up] .new-label{position:relative}.new-button[data-style=slide-up] .new-spinner{left:50%;margin-left:-16px;margin-top:1em}.new-button[data-style=slide-up][data-loading] .new-label{opacity:0;top:-1em}.new-button[data-style=slide-up][data-loading] .new-spinner{opacity:1;margin-top:-16px}.new-button[data-style=slide-down]{overflow:hidden}.new-button[data-style=slide-down] .new-label{position:relative}.new-button[data-style=slide-down] .new-spinner{left:50%;margin-left:-16px;margin-top:-2em}.new-button[data-style=slide-down][data-loading] .new-label{opacity:0;top:1em}.new-button[data-style=slide-down][data-loading] .new-spinner{opacity:1;margin-top:-16px}.new-button[data-style=zoom-out]{overflow:hidden}.new-button[data-style=zoom-out] .new-spinner{left:50%;margin-left:-16px;-webkit-transform:scale(2.5);-moz-transform:scale(2.5);-ms-transform:scale(2.5);-o-transform:scale(2.5);transform:scale(2.5)}.new-button[data-style=zoom-out] .new-label{position:relative;display:inline-block}.new-button[data-style=zoom-out][data-loading] .new-label{opacity:0;-webkit-transform:scale(0.5);-moz-transform:scale(0.5);-ms-transform:scale(0.5);-o-transform:scale(0.5);transform:scale(0.5)}.new-button[data-style=zoom-out][data-loading] .new-spinner{opacity:1;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}.new-button[data-style=zoom-in]{overflow:hidden}.new-button[data-style=zoom-in] .new-spinner{left:50%;margin-left:-16px;-webkit-transform:scale(0.2);-moz-transform:scale(0.2);-ms-transform:scale(0.2);-o-transform:scale(0.2);transform:scale(0.2)}.new-button[data-style=zoom-in] .new-label{position:relative;display:inline-block}.new-button[data-style=zoom-in][data-loading] .new-label{opacity:0;-webkit-transform:scale(2.2);-moz-transform:scale(2.2);-ms-transform:scale(2.2);-o-transform:scale(2.2);transform:scale(2.2)}.new-button[data-style=zoom-in][data-loading] .new-spinner{opacity:1;-webkit-transform:none;-moz-transform:none;-ms-transform:none;-o-transform:none;transform:none}.new-button[data-style=contract]{overflow:hidden;width:100px}.new-button[data-style=contract] .new-spinner{left:50%;margin-left:-16px}.new-button[data-style=contract][data-loading]{border-radius:50%;width:52px}.new-button[data-style=contract][data-loading] .new-label{opacity:0}.new-button[data-style=contract][data-loading] .new-spinner{opacity:1}.new-button[data-style=contract-overlay]{overflow:hidden;width:100px;box-shadow:0px 0px 0px 3000px rgba(0,0,0,0)}.new-button[data-style=contract-overlay] .new-spinner{left:50%;margin-left:-16px}.new-button[data-style=contract-overlay][data-loading]{border-radius:50%;width:52px;box-shadow:0px 0px 0px 3000px rgba(0,0,0,0.8)}.new-button[data-style=contract-overlay][data-loading] .new-label{opacity:0}.new-button[data-style=contract-overlay][data-loading] .new-spinner{opacity:1}.new-button{background:#666;border:0;padding:14px 18px;font-size:18px;cursor:pointer;color:#fff;border-radius:2px;border:1px solid transparent;-webkit-appearance:none;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:rgba(0,0,0,0)}.new-button:hover{border-color:rgba(0,0,0,0.07);background-color:#888}.new-button[data-color=green]{background:#2aca76}.new-button[data-color=green]:hover{background-color:#38d683}.new-button[data-color=blue]{background:#53b5e6}.new-button[data-color=blue]:hover{background-color:#69bfe9}.new-button[data-color=red]{background:#ea8557}.new-button[data-color=red]:hover{background-color:#ed956e}.new-button[data-color=purple]{background:#9973c2}.new-button[data-color=purple]:hover{background-color:#a685ca}.new-button[data-color=mint]{background:#16a085}.new-button[data-color=mint]:hover{background-color:#19b698}.new-button[disabled],.new-button[data-loading]{border-color:rgba(0,0,0,0.07);cursor:default;background-color:#999}.new-button[disabled]:hover,.new-button[data-loading]:hover{cursor:default;background-color:#999}.new-button[data-size=xs]{padding:4px 8px}.new-button[data-size=xs] .new-label{font-size:0.7em}.new-button[data-size=s]{padding:6px 10px}.new-button[data-size=s] .new-label{font-size:0.9em}.new-button[data-size=l] .new-label{font-size:1.2em}.new-button[data-size=xl] .new-label{font-size:1.5em}
+		</style>
+
+</body>
+
+
+
+    
+
+</html>

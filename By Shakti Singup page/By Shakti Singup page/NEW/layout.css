@@ -1,0 +1,14 @@
+div.container {
+    width: 100%;
+    border: 0px solid white;
+	position:relative;
+	min-width:600px;
+}
+
+header{
+	padding: 1em;
+    clear: left;
+    text-align: center;
+	border: 0px solid white;
+}
+

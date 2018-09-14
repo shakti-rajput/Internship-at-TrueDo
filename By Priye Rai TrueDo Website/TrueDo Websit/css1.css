@@ -1,0 +1,46 @@
+#bold{
+color:black;
+}
+body
+{
+font-family:arial;
+font-size:14;
+}
+a:link{
+color:white;
+}
+a:visited{
+color:gray;
+}
+a:hover{
+color:green;
+}
+button{
+padding: 20px 20px 20px 20px;
+background: green;
+}
+#head{
+background:url(Universal-Theme.gif);
+  height: 800;
+  width: 1280;
+  background-size: cover;
+  background-repeat:   no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+i{
+color:white;font-family:arial;font-size:14;
+}
+#h{
+color:#white;
+}
+#k{
+color:white;
+}
+#a{
+color:006400;
+}
+#profimg {
+border-radius: 50%;
+}

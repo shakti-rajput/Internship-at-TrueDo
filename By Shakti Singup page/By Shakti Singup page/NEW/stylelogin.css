@@ -1,0 +1,88 @@
+input[type=text].lng{
+width:200px;height:30px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;font-size: 15px;
+}
+input[type=password].lng{
+width:200px;height:30px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;font-size: 15px;
+}
+input[type=submit].lng{
+width:120px;height:30px;font-size: 15px;background: forestgreen;color:lightgrey;
+}
+
+
+input[type="submit"]:hover {
+	background: #006600;
+	border-radius: 6px;
+	color:white;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+		transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+}
+
+
+@media (max-width:1440px){
+	input[type=text].lng{
+		width:180px;
+	}
+	input[type=password].lng{
+		width:180px;
+	}
+	input[type=submit].lng{
+		width:110px;
+	}
+}
+@media (max-width:1230px){
+	input[type=text].lng{
+		width:170px;
+	}
+	input[type=password].lng{
+		width:170px;
+	}
+	input[type=submit].lng{
+		width:105px;
+	}	
+}
+@media (max-width:950px){
+	input[type=text].lng{
+		width:140px;
+	}
+	input[type=password].lng{
+		width:140px;
+	}
+	input[type=submit].lng{
+		width:90px;
+	} 
+}
+@media (max-width:868px){
+	input[type=text].lng{
+		width:110px;
+	}
+	input[type=password].lng{
+		width:110px;
+	}
+	input[type=submit].lng{
+		width:75px;
+	} 
+}
+
+@media (max-width:768px){
+	input[type=text].lng{
+		width:90px;
+	}
+	input[type=password].lng{
+		width:90px;
+	}
+	input[type=submit].lng{
+		width:65px;
+	} 
+}
+@media (max-width:680px){
+	
+}
+@media (max-width:620px){
+	
+}

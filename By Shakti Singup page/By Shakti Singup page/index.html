@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AgroKult</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Agro Kult Farmer " />
+<style>
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight:lighter;
+  color: white;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-family: monospace;
+}
+.navbar a.argo{
+  font-size: 12px;
+
+}
+
+input[type=text].lng{
+width:200px;height:35px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;
+}
+input[type=password].lng{
+width:200px;height:60px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;margin-bottom:25px;
+}
+input[type=submit].lng{
+width:120px;height:43px;font-size: 25px;
+}
+</style>
+<style>
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none;}
+.txt-rt{text-align:right;}
+.txt-lt{text-align:left;}
+.txt-center{text-align:center;}
+.float-rt{float:right;}
+.float-lt{float:left;}
+.clear{clear:both;}
+.pos-relative{position:relative;}
+.pos-absolute{position:absolute;}
+.vertical-base{	vertical-align:baseline;}
+.vertical-top{	vertical-align:top;}
+nav.vertical ul li{	display:block;}
+nav.horizontal ul li{	display: inline-block;}
+img{max-width:100%;}
+
+
+
+
+input[type="submit"]{
+	font-size: 30px;
+	display: inline-block;
+	font-weight: 100;
+	color: lightgrey;
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+	cursor: pointer;
+	outline: none;
+	padding: 6px 6px;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	border: none;
+	background: #339933;
+	margin-bottom: 0.5em;
+}
+input[type="submit"]:hover {
+	background: #006600;
+	border-radius: 6px;
+	color:white;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+		transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+}
+
+body{
+	min-height:100%;
+	background: url(agr.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+h1.argh{
+color: #336600;margin-left:40px;margin-top:30px;font-size:70px;
+}
+a.argh{
+color:black;margin-top:30px;font-size:70px;
+}
+h2.argh{
+margin-left:40px;font-style:oblique;font-size:20px;
+}
+@media (max-width:1440px){
+
+    font.argh h1.argh{
+      font-size:70px
+    }
+    h2.argh{
+      font-size:20px;
+    }
+          
+
+}
+@media (max-width:1230px){
+		h1.argh{
+			font-size:60px;
+			}
+            a.argh{
+			font-size:60px;
+			}
+			h2.argh{
+			font-size:18px;
+			}
+			.navbar a {			
+            font-size: 18px;
+			}
+            .navbar a {			
+            font-size: 16px;
+            padding: 13px 34px;
+          }
+
+input[type=text].lng{
+width:160px;height:28px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;
+}
+input[type=password].lng{
+width:160px;height:28px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;
+}
+input[type=submit].lng{
+margin:10px;top:100px;width:105px;height:36px;font-size: 20px;
+}
+    
+}
+@media (max-width:950px){
+
+		h1.argh{
+			font-size:50px;
+			}
+            a.argh{
+			font-size:50px;
+			}
+			h2.argh{
+			font-size:16px;
+			}
+
+	.thank-you {
+		width: 46%;
+	}
+     .navbar a{			
+            font-size: 15px;
+            padding: 10px 30px;
+          }
+          
+    input[type=text].lng{
+width:140px;height:27px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;
+}
+input[type=password].lng{
+width:140px;height:27px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;
+}
+input[type=submit].lng{
+margin:2px;top:100px;width:100px;height:32px;font-size: 16px;
+}
+
+}
+@media (max-width:768px){
+
+		h1.argh{
+			font-size:40px;
+			}
+            a.argh{
+			font-size:40px;
+			}
+			h2.argh{
+			font-size:14px;
+			}
+
+	.thank-you {
+		width: 65%;
+	}
+    .navbar a{			
+            font-size: 15px;
+            padding: 9px 25px;
+          }
+          
+ input[type=text].lng{
+width:110px;height:25px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:8px;
+}
+input[type=password].lng{
+width:110px;height:25px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:8px;
+}
+input[type=submit].lng{
+margin:2px;top:100px;width:70px;height:32px;font-size: 15px;
+}
+
+}
+@media (max-width:680px){
+	h1.argh{
+			font-size:35px;
+			}
+            a.argh{
+			font-size:35px;
+			}
+			h2.argh{
+			font-size:13px;
+			}
+            .navbar a{			
+            font-size: 15px;
+            padding: 9px 15px;
+          }
+}
+@media (max-width:620px){
+	h1.argh{
+			font-size:33px;
+			}
+            a.argh{
+			font-size:33px;
+			}
+			h2.argh{
+			font-size:11px;
+			}
+            form li{
+	margin-bottom: 19px;
+    }
+}
+
+
+@media (max-width:585px){
+		h1.argh{
+			font-size:28px;
+			}
+            a.argh{
+			font-size:28px;
+			}
+			h2.argh{
+			font-size:10px;
+			}
+            .navbar a{	
+				text-align:center;
+            font-size: 11px;
+            padding: 4px 9px;
+          }
+ 
+    
+input[type=text].lng{
+width:85px;height:20px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:8px;
+}
+input[type=password].lng{
+width:85px;height:20px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:8px;
+}
+input[type=submit].lng{
+margin:0px;top:100px;width:40px;height:25px;font-size: 12px;
+}
+
+
+}
+@media (max-width:444px){
+
+	h1.argh{
+			font-size:17px;
+			}
+            a.argh{
+			font-size:17px;
+			}
+			h2.argh{
+			font-size:10px;
+			}
+
+    .navbar a{			
+            font-size: 9px;
+            padding: 1px 6px;
+          }
+	  .argo a{			
+		font-size: 3px;
+		padding: 3px 0px;
+	  }
+    input[type=text].lng{
+width:70px;height:20px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:4px;
+}
+input[type=password].lng{
+width:70px;height:20px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:4px;
+}
+input[type=submit].lng{
+margin:0px;top:100px;width:32px;height:22px;font-size: 9px;
+}
+}
+@media (max-width:410px){
+
+	h1.argh{
+			font-size:17px;
+			}
+            a.argh{
+			font-size:17px;
+			}
+			h2.argh{
+			font-size:10px;
+			}
+
+    .navbar a{			
+            font-size: 7px;
+            padding: 3px 6px;
+          }
+	  .argo a{			
+		font-size: 3px;
+		padding: 3px 0px;
+	  }
+    input[type=text].lng{
+width:55px;height:20px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;font-size: 9px;
+}
+input[type=password].lng{
+width:55px;height:20px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;font-size: 9px;
+}
+input[type=submit].lng{
+margin:0px;top:100px;width:32px;height:22px;font-size: 9px;
+}
+}
+</style>
+	
+<style>
+/* Form */
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 300px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  outline: 0;
+  background: #CC0033;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+    color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  
+  font-size: 14px;
+  -webkit-transition: all 0.9 ease;
+  transition: all 0.9 ease;
+  cursor: pointer;
+}
+.form button:hover {
+padding: 14px;
+  font-size:16px;
+  background: #EF3B3A;
+color: #FFFFFF;
+
+  weight:bold;
+ 
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+    
+
+<div style="z-index:2;" class="navbar">
+
+  <a href=""style=""></a>
+  <a href="#contact" style="">Contact Us</a>
+  <a href="#contact">Language</a>
+  <a href="#about">Support</a>
+  <a class="agro"href="#about" style="font-family: Georgia;float:right;">AgroKult-Organizing the unorganized</a>
+</div>
+<div style="margin-right:1%;float:right;background-color:transparent;"class="lng">
+<form class="lng">
+<input type="text" class="lng"  
+style="" placeholder="Email"
+/>
+<input type="password" class="lng"  
+style=""  placeholder="Password"
+/>
+ <input class="lng" type="submit" style=""  value="Login"/>
+</form>
+</div>
+<div class="argh" style="font-family: Georgia;background-color:transparent;width:40%">
+ <h1 class="argh"style="">Agro<a class="argh" style="">Kult</a></h1>
+<h2 class="argh"style="">Organizing the Unorganized</h2>
+</div>
+<div class="form"  style="background:transparent; z-index: 0;width:100%;margin-top:5%">
+  <form >
+	<input type="text" placeholder="First Name"style="width:100%;max-width:960px;min-width:30px" />
+	<input type="text" placeholder="Last Name"/>
+	<input type="text" placeholder="Email or Phone Number"/>
+    <input type="password" placeholder="Password"/>
+    <button>Join Now</button>
+  </form>
+</div>
+
+</body>
+</html>

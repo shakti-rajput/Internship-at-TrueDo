@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>New business page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Agro Kult Farmer " />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="keywords" content="footer, links, icons" />
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body{margin:0;padding:0;border:0;background-color:#ebebe0;}
+</style>
+<link rel="stylesheet" type="text/css" href="style_navigation_bar.css">
+<link rel="stylesheet" type="text/css" href="layout.css">
+</head>
+<body>
+
+<div class="log">
+	<img src="AgroKult Logo.jpg" style="z-index:2;margin-top:20px;margin-left:10px;width:300px; height:88px; float:left;"></img>
+	</div>
+	<style>
+	.log{
+	position:relative;
+	height:122px;
+	max-width:1360px;
+	margin-top:-10px;
+	border-bottom: 5px solid black;
+	background-color:white;
+	}
+	</style>
+
+	
+<div id="container">
+    
+    <form class="well form-horizontal" id="contain" action=" " method="post"  id="contact_form">
+<fieldset><br>
+<!-- Form Name -->
+<legend><center>Business Imformation</center></legend>
+
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Company Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input   style=" z-index: 1" name="first_name" placeholder="Company Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Text input-->
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Service rendered</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-leaf"></i></span>
+  <input   style=" z-index: 1" name="first_name" placeholder="Service rendered" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+ 
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Region</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select  style=" z-index: 1" name="state" class="form-control selectpicker" >
+      <option value=" " >Please select your state</option>
+      <option>Alabama</option>
+      <option>Alaska</option>
+      <option >Arizona</option>
+      <option >Arkansas</option>
+      <option >California</option>
+      <option >Colorado</option>
+      <option >Connecticut</option>
+      <option >Delaware</option>
+      <option >District of Columbia</option>
+      <option> Florida</option>
+      <option >Georgia</option>
+      <option >Hawaii</option>
+      <option >daho</option>
+      <option >Illinois</option>
+      <option >Indiana</option>
+      <option >Iowa</option>
+      <option> Kansas</option>
+      <option >Kentucky</option>
+      <option >Louisiana</option>
+      <option>Maine</option>
+      <option >Maryland</option>
+      <option> Mass</option>
+      <option >Michigan</option>
+      <option >Minnesota</option>
+      <option>Mississippi</option>
+      <option>Missouri</option>
+      <option>Montana</option>
+      <option>Nebraska</option>
+      <option>Nevada</option>
+      <option>New Hampshire</option>
+      <option>New Jersey</option>
+      <option>New Mexico</option>
+      <option>New York</option>
+      <option>North Carolina</option>
+      <option>North Dakota</option>
+      <option>Ohio</option>
+      <option>Oklahoma</option>
+      <option>Oregon</option>
+      <option>Pennsylvania</option>
+      <option>Rhode Island</option>
+      <option>South Carolina</option>
+      <option>South Dakota</option>
+     
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text input-->
+<style>
+input[type=text].lng{
+width:200px;height:30px;display: inline-block; border: 1px solid #009900; border-radius:4px; box-sizing:border-box;color:black;padding-left:10px;font-size: 15px;
+}
+input[type=submit].lng{
+width:120px;height:30px;font-size: 15px;background: forestgreen;color:lightgrey;
+}
+
+input[type="submit"]:hover {
+	background: #006600;
+	border-radius: 6px;
+	color:white;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	-ms-border-radius: 6px;
+		transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+}
+
+</style>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Interested In</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-transfer"></i></span>
+  <input  placeholder="Interest" id="title" type="text" size="31.5" maxlength="14">&nbsp;&nbsp;
+<input type="button" value="Add" class="lng" value="ADD" onclick="insert()" style="background-color:#79d279;" />
+<div class="w3-card" class="lng" style="width:200px;background-color:lightgrey"id="display">
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- Text area -->
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Company Msg</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea style=" z-index: 1" class="form-control" name="comment" placeholder="Company Messsage"></textarea>
+  </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Company Address</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea  style=" z-index: 1" class="form-control" name="comment" placeholder="Company Address"></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group" style=" z-index: 0">
+  <label class="col-md-4 control-label">Website</label>  
+   <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input style=" z-index: 1" name="website" placeholder="Website or domain name" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<!-- Button -->
+<div class="form-group" style=" z-index: 0">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-success" >Send <span class="glyphicon glyphicon-send"></span></button><br><br>
+  </div>
+</div>
+<br><br><br>
+</fieldset>
+</form>
+
+</div>
+<!-- end -->
+	<div class="navbar" style="z-index:2;">
+	  <a class="first" href="#contact">Contact Us</a>
+	  <a href="#contact">Language</a>
+	  <a href="#about">Support</a>
+	  <a class="agro" href="#about">AgroKult-Organizing the unorganized</a>
+	</div>
+
+	
+<script>
+var x;
+var id_name = "abc";
+function insert(){
+var para = document.createElement("p");
+x = document.getElementById("display").childElementCount;
+para.id=id_name+((x-1)/2);
+var titleInput  = document.getElementById("title");
+var node = document.createTextNode(titleInput.value );
+para.appendChild(node);
+
+var element = document.getElementById("display");
+
+element.appendChild(para);
+document.getElementById("display").innerHTML+="<input type='submit' id='"+id_name+"' style='font-size:11px;float:right;top:-43px;margin-right:5px;position:relative;background-color:#a3a375;' value='Remove' onclick='delet(this.id)' /> ";
+document.getElementById(id_name).id = para.id;
+ document.getElementById(para.id).style.border = "thick solid white";
+ document.getElementById(para.id).style.padding = "0px 5px";
+}
+</script>
+
+<script>
+function delet(clicked_id){
+var parent = document.getElementById("display");
+var child = document.getElementById(clicked_id);
+parent.removeChild(child);
+var parent = document.getElementById("display");
+var child = document.getElementById(clicked_id);
+parent.removeChild(child);
+}
+
+</script>
+	
+</body>
+</html>

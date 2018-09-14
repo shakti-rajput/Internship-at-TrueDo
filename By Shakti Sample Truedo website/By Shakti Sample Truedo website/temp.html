@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<style>
+.container {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+    
+    
+}
+
+.container a {
+
+    float: left;
+    display:block;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+border-width: 1px;  border-style: solid;border-color: white;
+    transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    border-width: 1px;  border-style: solid;border-color: white;
+    
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 16px;
+    background-color: inherit;
+    border-width: 1px;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: lightgray;
+     border-radius: 25%;
+     color:black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9ca4a5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-width: 1px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+   margin-top:47px
+}
+a.icon{display: none;}
+@media screen and (max-width: 600px) {
+  .container a:not(:first-child) {display: none;}
+ a.dropbtn{display: none;}
+  .container a.icon {
+    float: right;
+    display: block;
+  }
+ a.yo {
+
+    padding: 16.5px 16px;
+    
+}
+}
+
+</style>
+<style>
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('Capture2.png');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+</style>
+<script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+    
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+    
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 40);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+     
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About Us</a>
+  <a href="#">P.R.E.G</a>
+  <a href="#">FerroCharge</a>
+  <a href="#">Contact Us</a>
+</div>
+<div id="main" >
+<div class="container">
+  <a onclick="smoothScroll(document.getElementById('home'))" class="yo">Home</a>
+    <div class="dropdown">
+    <a class="dropbtn">About Us</a>
+    <div class="dropdown-content">
+      <a onclick="smoothScroll(document.getElementById('what_we_do'))">What We Do</a>
+      <a onclick="smoothScroll(document.getElementById('why_we_do'))">Why We Do</a>
+    </div>
+  </div>
+  <a class="dropbtn" onclick="smoothScroll(document.getElementById('preg'))">P.R.E.G</a>
+  <a class="dropbtn" onclick="smoothScroll(document.getElementById('ferro'))">FerroCharge</a>
+  <a class="dropbtn" onclick="smoothScroll(document.getElementById('cont'))">Contact Us</a>
+
+
+<a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
+</div>
+</div>
+<div id="home"><h1 size="21"style="text-align:center">We are working for a future Powered by 
+
+Clean Energy</h1></div>
+<div class="parallax"></div>
+<div id="what_we_do" style="height:100%">
+<h1 style="text-align:center;">What we do</h1>
+<h1 size="44">
+We are making Energy Sustainable.
+
+ 
+
+We are developing new ways of Generating Electricity to Power the Future.
+
+ 
+
+When we'll be done the Future Energy will not leave Carbon Footprints nor will it require Fossil Fuels or Pollute Nature
+
+
+</h1></div>
+<div id="why_we_do"style="height:100%">
+<h1 style="text-align:center;">Why we do</h1>
+
+<h1 size="44">
+Our Philosophy
+
+Truthful Doings is what we believe in at TrueDo
+
+We are committed to develop, innovate, invent and implement novel projects that truly benefit the society at large.
+
+ 
+
+Our motto is Sustainability through Innovation, we are committed to make products that are friendly to both the user and the environment.
+
+</h1></div>
+<div class="parallax"></div>
+<div id="preg"style="height:100%">
+<h1 style="text-align:center;">P.R.E.G.</h1>
+
+<h1 size="44">
+
+Well, P.R.E.G. stands for Portable Renewable Energy Generator.
+
+ 
+
+P.R.E.G. will power Micro-Grids for Off-Grid applications and will make Energy affable as well as affordable. Access to Electricity for Everyone is what we aim at through P.R.E.G.
+
+
+</h1></div>
+<div class="parallax"></div>
+<div id="ferro"style="height:100%">
+<h1 style="text-align:center;">FerroCharge</h1>
+
+<h1 size="44">
+
+Ever wondered of charging your smartphone on the Go?
+
+ 
+
+Don't worry we are working on that for you!
+
+ 
+
+ 
+
+When we are done, you'll be able to charge that gadget of your while you walk down the lane to your destination.
+
+Till then stay put 🙂
+
+
+</h1></div>
+<div id="cont"style="height:100%">
+<h1 style="text-align:center;">Contact Us</h1>
+
+<h1 size="44">
+Email
+info.truedo@gmail.com
+Phone
++91 9810525282
+Address
+B 60, Sector 8, Dwarka, New Delhi, 110077 (INDIA)
+</h1></div>
+<div class="parallax" id="go_top">
+<img onclick="smoothScroll(document.getElementById('main'))" style=" position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size: 18px;z-index:1 height: 100px;
+    width: 50px; z-index:1"src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/green-grunge-clipart-icons-arrows/005300-green-grunge-clipart-icon-arrows-hand-clear-pointer-up.png"/>
+</div>
+
+</body>
+</html>

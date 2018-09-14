@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Home</title>
+
+<style>
+/* Form */
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 300px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+.form .thumbnail {
+  background: black;
+  opacity:.51;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 50px 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
+}
+.form .thumbnail img {
+  display: block;
+  width: 100%;
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  outline: 0;
+  background: #EF3B3A;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #EF3B3A;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+
+/* END Form */
+/* Demo Purposes */
+body {
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: ;
+}
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+
+body, html {
+    min-height: 100%;
+    margin: 0;
+	min-width:100%;
+	width:100%;
+	
+}
+
+.bg {
+  z-index: 1;
+
+    /* The image used */
+    background-image: url("agr.jpg");
+
+    /* Full height */
+    min-height: 111%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 36px;
+    text-decoration: none;
+	font-family: monospace;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+h5 { 
+   position: relative; 
+   top: 10px; 
+   left: 180px; 
+   font-family: Georgia; 
+   font-stretch: expanded;
+}
+h6 { 
+   position: relative; 
+   top: 10px; 
+   left: 180px; 
+   font-family: Georgia; 
+   font-stretch: expanded;
+}
+.lng{ 
+   position: relative; 
+   top: -100px; 
+   left: 60px; 
+}
+ input:active {
+        width: auto;   
+    }
+	
+
+</style>
+
+</head>
+<body class="front">
+
+<ul   style=" z-index: 1;width:100%;margin:auto;">
+  <li ><a ></a></li>
+  <li ><a class="front" href="#Contact Us">Contact Us</a></li>
+  <li ><a class="front" href="#Language">Language</a></li>
+  <li ><a class="front" href="#Support">Support</a></li>
+  <li style="float:right;"><a style="font-family: Georgia; font-stretch: expanded;font-weight:lighter;">AgroKult - Organizing the Unorganized</a></li>
+</ul>
+ 
+<div class="bg" style="z-index=1"style="margin:auto;">
+<h5 style="color:darkgreen; font-size: 350%;font-weight:lighter;  position: relative;margin:auto;width:100%; ">Agro</h5>
+<h5  style="color:black; font-size: 350%;font-weight:lighter;   top:-50px; left: 300px;  position:width:100%; relative;margin:auto; ">Kult</h5>
+<h6  style="color:black; font-size: 110%;font-weight:lighter;   top:-190px;left: 180px; font-style: oblique; width:100%;position: relative;margin:auto; ">Organizing the Unorganized</h6>
+<div class="form lng "  style="background:transparent; z-index: 0;width:100%;margin:auto;">
+  <div class="thumbnail"><h4 style="color:green;font-size: 120%;font-weight:lighter;">Agro Kult</h4></div>
+  
+  
+  <form class="register-form">
+    <input type="text" placeholder="username"/>
+    <input type="password" placeholder="password"/>
+    <button>login</button>
+    <p class="message" style ="color:black; font-weight: bold;">Not registered? <a href="#Create an account"style="font-weight: bold; ">Create an account</a></p>
+  </form>
+  
+  
+  <form class="login-form">
+  
+  <input type="text" placeholder="Name"style="width:100%;max-width:960px;min-width:30px" />
+   <input type="text" placeholder="Email address"/>
+    <input type="password" placeholder="Password"/>
+       <input type="password" placeholder="Confirm password"/>
+
+    <button>Join Now</button>
+    <p class="message" style ="color:black; font-weight: bold;">Already registered? <a href="#Sign In" style="font-weight: bold;">Sign In</a></p>
+    
+  </form>
+</div>
+
+  <script src='js/jquery.js'></script>
+    <script src="js/index.js"></script>
+
+</div>
+
+
+
+
+</body>
+
+</html>

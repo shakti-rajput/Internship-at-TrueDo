@@ -1,0 +1,14 @@
+div.upper {
+    width: 1700px;
+    border: 0px solid white;
+	position:relative;	
+	max-width:100%;
+}
+
+header{
+	padding: 3em;
+    clear: left;
+    text-align: center;
+	border: 0px solid white;
+}
+
